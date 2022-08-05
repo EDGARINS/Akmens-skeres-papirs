@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock - Paper - Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>AKMENS - ŠĶĒRES - PAPĪRS</h1>
+      <p id="teksts">Spēle līdz 3 uzvarām</p>
+    </header>
+    <section class="game">
+      <div class="izvele">
+        <h2>Tava izvēle</h2>
+        <div class="wrapper">
+          <a href="#">
+            <img onclick="cakmens()" src="./rock.png" alt="akmens" id="akmens"
+          /></a>
+          <a href="#"
+            ><img
+              onclick="cskeres()"
+              src="./scissors.png"
+              alt="skeres"
+              id="skeres"
+          /></a>
+          <a href="#"
+            ><img
+              onclick="cpapirs()"
+              src="./Paper.png"
+              alt="papirs"
+              id="papirs"
+          /></a>
+        </div>
+      </div>
+      <div class="rez">
+        <h2>Rezultāts</h2>
+        <div class="rezultats">
+          <h2 id="rcilveks"></h2>
+          <h2>:</h2>
+          <h2 id="rdators"></h2>
+        </div>
+        <button
+          onclick="turpinat()"
+          id="button"
+          class="button"
+          type="Button"
+        ></button>
+        <h1 id="uzvarasteksts"></h1>
+      </div>
+      <div class="dators">
+        <h2>Datora izvēle</h2>
+        <div class="wrapper">
+          <img src="./rock.png" alt="akmens" id="Dakmens" />
+          <img src="./scissors.png" alt="skeres" id="Dskeres" />
+          <img src="./Paper.png" alt="papirs" id="Dpapirs" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
